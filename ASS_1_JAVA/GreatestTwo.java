@@ -1,3 +1,4 @@
+package ASS_1_JAVA;
 // Greatest Using Conditional Operators 
 
 import java.util.Scanner;

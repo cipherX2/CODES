@@ -1,3 +1,4 @@
+package ASS_1_JAVA;
 import java.util.Scanner;
 
 public class AverageMark {

@@ -1,3 +1,4 @@
+package ASS_1_JAVA;
 public class FloatAddition {
     public static void main(String[] args) {
         float num1 = 10.25F;
