@@ -9,5 +9,6 @@ public class SwapWithoutVariables {
         num1 = (num1 + num2) - num1;
         num2 = (num1 + num2) - num2;
         System.out.println("After Swap: " + num1 + " " + num2);
+        S.close();
     }
 }

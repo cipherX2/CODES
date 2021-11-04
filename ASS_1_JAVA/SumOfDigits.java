@@ -12,5 +12,6 @@ public class SumOfDigits {
             num1 /=10;
         }
         System.out.println("The sum of the numbers are: " + sum);
+        S.close();
     }    
 }

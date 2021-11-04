@@ -11,6 +11,7 @@ public class SwapUsingVariables {
         num1 = num2;
         num2 = temp;
         System.out.println("Values after swap: " + num1 + " " +  num2);
+        S.close();
     }
 }
 

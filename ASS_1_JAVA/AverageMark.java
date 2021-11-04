@@ -9,5 +9,6 @@ public class AverageMark {
         float student3 = S.nextFloat();
         double Average = (student1 + student2 + student3) / 3;
         System.out.println("The average is: " + Average);
+        S.close();
     }
 }

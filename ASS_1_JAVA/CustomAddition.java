@@ -7,5 +7,6 @@ public class CustomAddition {
         float num2 = news.nextFloat();
         float sum = num1 + num2;
         System.out.println("The sum of the two number are: " + sum);
+        news.close();
     }
 }

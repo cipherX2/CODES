@@ -8,5 +8,6 @@ public class AreaRectangle {
         int breadth = S.nextInt();
         int area = length * breadth;
         System.out.println("The area of the rectangle is: " + area);
+        S.close();
     }
 }

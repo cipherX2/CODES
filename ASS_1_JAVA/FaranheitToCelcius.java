@@ -7,5 +7,6 @@ public class FaranheitToCelcius {
         float f = S.nextFloat();
         double celsius = ((f - 32) * 5) / 9;
         System.out.println("The tempreature in celsius is: " + celsius);
+        S.close();
     }
 }

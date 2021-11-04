@@ -9,5 +9,6 @@ public class SimpleInterest {
         float time = S.nextFloat();
         float simpleInterest = (amount * interest * time) / 100;
         System.out.println("Simple Interest is: " + simpleInterest);
+        S.close();
     }
 }
