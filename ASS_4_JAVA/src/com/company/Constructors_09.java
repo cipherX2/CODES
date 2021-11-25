@@ -14,13 +14,11 @@ class ComplexNum{
         System.out.format("Complex Number: %d+%di\n", real, img);
     }
 
-    public void main(){
-        Scanner sc = new Scanner(System.in);
-        int real_ptII, img_ptII;
-        System.out.println("Enter the real and imaginary part of second complex number: ");
-        real_ptII = sc.nextInt();
-        img_ptII = sc.nextInt();
-        System.out.format("Sum is: %d+%di", (real+real_ptII), (img+img_ptII));
+    void addComplexNum (ComplexNum x, ComplexNum y){
+        real = x.real + y.real;
+        img = x.img + y.img;
+//        return this;
+        System.out.format("Sum: %d+%di", real, img ) ;
     }
 
 }
@@ -31,6 +29,13 @@ public class Constructors_09 {
         System.out.println("Enter the real and imaginary part of first complex number: ");
         ComplexNum ty = new ComplexNum(S.nextInt(),S.nextInt());
         ty.displayCompNumber();
-        ty.main();
+
+        System.out.println("Enter the real and imaginary part of first complex number: ");
+        ComplexNum ok = new ComplexNum(S.nextInt(),S.nextInt());
+        ok.displayCompNumber();
+
+        ComplexNum ans = new ComplexNum(0,0);
+        ans.addComplexNum(ty,ok);
+
     }
 }
