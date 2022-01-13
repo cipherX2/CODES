@@ -20,7 +20,8 @@ public class Question3 {
                 System.out.println("Index not valid...");
                 flag += 1;
             }
-        }if(flag==5){
+        }
+        if (flag == 5) {
             System.out.println("Limit Exceeded.....");
         }
     }

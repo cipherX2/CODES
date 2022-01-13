@@ -33,21 +33,21 @@ class Account {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-        }else{
+        } else {
             balance -= amount;
             System.out.println("Amount Withdrawn: " + amount + " Remaining balance: " + balance);
         }
     }
 
-    void transfer(int acc1,int acc2,int amount){
-        if(this.balance - amount < 500){
-            try{
+    void transfer(int acc1, int acc2, int amount) {
+        if (this.balance - amount < 500) {
+            try {
                 throw new MyCustomException();
-            }catch (Exception e){
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-        }else{
-            balance -=amount;
+        } else {
+            balance -= amount;
             System.out.println("Transaction Successful.....");
             System.out.println("Amount Transferred: " + amount + " Remaining balance: " + balance);
         }
@@ -57,9 +57,9 @@ class Account {
 public class Question5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Account cipher = new Account("Cipher",211,109900);
+        Account cipher = new Account("Cipher", 211, 109900);
         cipher.withdraw(50000);
-        cipher.transfer(211,100,10000);
+        cipher.transfer(211, 100, 10000);
         cipher.deposit(1090);
     }
 }
